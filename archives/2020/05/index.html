@@ -20,19 +20,17 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1、是把省份的超链接提取出来2、把必应翻译的程序和B站评论的程序用requests改写">
-<meta property="og:type" content="article">
-<meta property="og:title" content="第六次作业">
-<meta property="og:url" content="http://yoursite.com/2020/04/28/%E7%AC%AC%E5%85%AD%E6%AC%A1%E4%BD%9C%E4%B8%9A/index.html">
+  <meta name="description" content="加油努力，好好学习！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="垃圾小杭">
+<meta property="og:url" content="http://yoursite.com/archives/2020/05/index.html">
 <meta property="og:site_name" content="垃圾小杭">
-<meta property="og:description" content="1、是把省份的超链接提取出来2、把必应翻译的程序和B站评论的程序用requests改写">
+<meta property="og:description" content="加油努力，好好学习！">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-28T01:32:51.000Z">
-<meta property="article:modified_time" content="2020-04-30T16:06:13.345Z">
 <meta property="article:author" content="Hang">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/04/28/%E7%AC%AC%E5%85%AD%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
+<link rel="canonical" href="http://yoursite.com/archives/2020/05/">
 
 
 <script id="page-configurations">
@@ -40,11 +38,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true
+    isPost: false
   };
 </script>
 
-  <title>第六次作业 | 垃圾小杭</title>
+  <title>归档 | 垃圾小杭</title>
   
 
 
@@ -155,98 +153,49 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/28/%E7%AC%AC%E5%85%AD%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="Hang">
-      <meta itemprop="description" content="加油努力，好好学习！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="垃圾小杭">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          第六次作业
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-28 09:32:51" itemprop="dateCreated datePublished" datetime="2020-04-28T09:32:51+08:00">2020-04-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-01 00:06:13" itemprop="dateModified" datetime="2020-05-01T00:06:13+08:00">2020-05-01</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 6 篇日志。 继续努力。</span>
+      </div>
 
       
-        <p>1、是把省份的超链接提取出来<br>2、把必应翻译的程序和B站评论的程序用requests改写</p>
-<a id="more"></a>
-<h2 id="提取省份超链接"><a href="#提取省份超链接" class="headerlink" title="提取省份超链接"></a>提取省份超链接</h2><h2 id="必应翻译改写"><a href="#必应翻译改写" class="headerlink" title="必应翻译改写"></a>必应翻译改写</h2><p>import json<br>import requests</p>
-<p>def get_res():<br>    url = “<a href="https://cn.bing.com/ttranslatev3?isVertical=1&amp;&amp;IG=2B73CBCDC8F54EAFABF49389E29DC19A&amp;IID=translator.5028.2&quot;" target="_blank" rel="noopener">https://cn.bing.com/ttranslatev3?isVertical=1&amp;&amp;IG=2B73CBCDC8F54EAFABF49389E29DC19A&amp;IID=translator.5028.2&quot;</a><br>    text = input(“请输入单词:”)<br>    data = {<br>        “from”: “ zh-Hans”,<br>        “to”: “en”,<br>        “text”: text<br>    }<br>    response = requests.post(url=url, data=data)<br>    return response.json()</p>
-<p>def parser(data):<br>    result = [item[“detectedLanguage”] for item in data[“translations”]]<br>    print(result)</p>
-<p>def run():<br>    data = get_res()<br>    parser(data)</p>
-<p>if <strong>name</strong> == “<strong>main</strong>“:</p>
-<pre><code>run()</code></pre><h2 id="B站评论改写"><a href="#B站评论改写" class="headerlink" title="B站评论改写"></a>B站评论改写</h2><p>import requests</p>
-<p>def send_comment():<br>    url = “<a href="https://api.bilibili.com/x/v2/reply/add&quot;" target="_blank" rel="noopener">https://api.bilibili.com/x/v2/reply/add&quot;</a><br>    headers = {<br>        “Accept”: “application/json, text/javascript, <em>/</em>; q=0.01”,<br>        “Accept-Encoding”: “gzip, deflate, br”,<br>        “Accept-Language”: “zh-CN,zh;q=0.9”,<br>        “Connection”: “keep-alive”,<br>        “Content-Type”: “application/x-www-form-urlencoded; charset=UTF-8”,<br>        “Cookie”: “LIVE_BUVID=92712ec935a64a14e903fde047bb0665; LIVE_BUVID__ckMd5=a68c029d59fa1e7d; sid=hzrgfb68; _uuid=C2E37CA0-BB13-4F2E-DD48-8C9E0F27E3C048958infoc; buvid3=3567B490-71E6-46D5-AE40-2AF22F2AA4A0190962infoc; CURRENT_FNVAL=16; stardustvideo=1; laboratory=1-1; rpdid=|(J|klRu|)JR0J’ul~RYYm|lm; CURRENT_QUALITY=64; PVID=1; DedeUserID=454926423; DedeUserID__ckMd5=e271ed24028d53c4; SESSDATA=9fc575f0%2C1601446963%2Cc17a1*41; bili_jct=b7334ab8c8f769f30c691f7cb985e22d; bfe_id=393becc67cde8e85697ff111d724b3c8”,<br>        “Host”: “api.bilibili.com”,<br>        “Origin”: “<a href="https://www.bilibili.com&quot;" target="_blank" rel="noopener">https://www.bilibili.com&quot;</a>,<br>        “Referer”: “<a href="https://www.bilibili.com/video/av89901570?from=search&amp;seid=7620866718617405880&quot;" target="_blank" rel="noopener">https://www.bilibili.com/video/av89901570?from=search&amp;seid=7620866718617405880&quot;</a>,<br>        “User-Agent”: “Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36”<br>    }<br>    form_data = {<br>        “oid”:94775464,<br>        “type”: 1,<br>        “message”: “厉害厉害”,<br>        “plat”: 1,<br>        “jsonp”: “jsonp”,<br>        “csrf”: “b7334ab8c8f769f30c691f7cb985e22d “<br>    }<br>    response = requests.post(url=url, headers=headers, data=form_data)<br>    return response.json()</p>
-<p>def parser(data):<br>    data = data[“data”]<br>    print(data)<br>    result = data[“success_toast”]<br>    print(result)</p>
-<p>def run():<br>    data = send_comment()<br>    parser(data)</p>
-<p>if <strong>name</strong> == “<strong>main</strong>“:<br>    run()</p>
-
+    <div class="collection-year">
+      <h1 class="collection-header">2020</h1>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-05-01T13:03:02+08:00"
+              content="2020-05-01">
+          05-01
+        </time>
+      </div>
 
-        
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2020/05/01/%E7%AC%AC%E4%BA%94%E6%AC%A1%E4%BD%9C%E4%B8%9A/" itemprop="url">
+            <span itemprop="name">第五次作业</span>
+          </a>
+      </h2>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/03/01/%E7%AC%AC%E5%9B%9B%E6%AC%A1%E4%BD%9C%E4%B8%9A/" rel="prev" title="第四次作业">
-      <i class="fa fa-chevron-left"></i> 第四次作业
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/04/28/%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%BD%9C%E4%B8%9A/" rel="next" title="第七次作业">
-      第七次作业 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+
+    </div>
+  </div>
   
   
   
 
-  </div>
+  
+
 
 
           </div>
@@ -297,7 +246,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#提取省份超链接"><span class="nav-number">1.</span> <span class="nav-text">提取省份超链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#必应翻译改写"><span class="nav-number">2.</span> <span class="nav-text">必应翻译改写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B站评论改写"><span class="nav-number">3.</span> <span class="nav-text">B站评论改写</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
