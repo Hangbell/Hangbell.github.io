@@ -28,7 +28,7 @@
 <meta property="og:description" content="读取到响应内容 然后提取出“发送成功”和发送的信息提示：使用json模块能将字符串转换成字典">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-10T05:03:02.000Z">
-<meta property="article:modified_time" content="2020-05-01T05:05:33.794Z">
+<meta property="article:modified_time" content="2020-05-01T10:34:29.118Z">
 <meta property="article:author" content="Hang">
 <meta name="twitter:card" content="summary">
 
@@ -190,7 +190,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-01 13:05:33" itemprop="dateModified" datetime="2020-05-01T13:05:33+08:00">2020-05-01</time>
+                <time title="修改时间：2020-05-01 18:34:29" itemprop="dateModified" datetime="2020-05-01T18:34:29+08:00">2020-05-01</time>
               </span>
 
           
@@ -207,8 +207,8 @@
         <p>读取到响应内容 然后提取出“发送成功”和发送的信息<br>提示：使用json模块能将字符串转换成字典</p>
 <a id="more"></a>
 
-<p>import urllib.request<br>import urllib.parse<br>import http.cookiejar<br>import gzip<br>import json</p>
-<p>def crawler():<br>    url = “<a href="https://api.bilibili.com/x/v2/reply/add&quot;" target="_blank" rel="noopener">https://api.bilibili.com/x/v2/reply/add&quot;</a><br>    headers = {<br>        “Accept”: “application/json, text/javascript, <em>/</em>; q=0.01”,<br>        “Accept-Encoding”: “gzip, deflate, br”,<br>         “Accept-Language”: “zh-CN,zh;q=0.9”,<br>        “Connection”: “keep-alive”,<br>         “Content-Type”: “application/x-www-form-urlencoded; charset=UTF-8”,<br>         “Cookie”: “LIVE_BUVID=92712ec935a64a14e903fde047bb0665; LIVE_BUVID__ckMd5=a68c029d59fa1e7d; sid=hzrgfb68; _uuid=C2E37CA0-BB13-4F2E-DD48-8C9E0F27E3C048958infoc; buvid3=3567B490-71E6-46D5-AE40-2AF22F2AA4A0190962infoc; CURRENT_FNVAL=16; stardustvideo=1; laboratory=1-1; rpdid=|(J|klRu|)JR0J’ul~RYYm|lm; CURRENT_QUALITY=64; PVID=1; DedeUserID=454926423; DedeUserID__ckMd5=e271ed24028d53c4; SESSDATA=9fc575f0%2C1601446963%2Cc17a1*41; bili_jct=b7334ab8c8f769f30c691f7cb985e22d; bfe_id=393becc67cde8e85697ff111d724b3c8”,<br>         “Host”: “api.bilibili.com”,<br>         “Origin”: “<a href="https://www.bilibili.com&quot;" target="_blank" rel="noopener">https://www.bilibili.com&quot;</a>,<br>         “Referer”: “<a href="https://www.bilibili.com/video/av89901570?from=search&amp;seid=7620866718617405880&quot;" target="_blank" rel="noopener">https://www.bilibili.com/video/av89901570?from=search&amp;seid=7620866718617405880&quot;</a>,<br>         “User-Agent”: “Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36”<br>     }</p>
+<p> import urllib.request<br> import urllib.parse<br> import http.cookiejar<br> import gzip<br> import json</p>
+<p> def crawler():<br>    url = “<a href="https://api.bilibili.com/x/v2/reply/add&quot;" target="_blank" rel="noopener">https://api.bilibili.com/x/v2/reply/add&quot;</a><br>    headers = {<br>        “Accept”: “application/json, text/javascript, <em>/</em>; q=0.01”,<br>        “Accept-Encoding”: “gzip, deflate, br”,<br>         “Accept-Language”: “zh-CN,zh;q=0.9”,<br>        “Connection”: “keep-alive”,<br>         “Content-Type”: “application/x-www-form-urlencoded; charset=UTF-8”,<br>         “Cookie”: “LIVE_BUVID=92712ec935a64a14e903fde047bb0665; LIVE_BUVID__ckMd5=a68c029d59fa1e7d; sid=hzrgfb68; _uuid=C2E37CA0-BB13-4F2E-DD48-8C9E0F27E3C048958infoc; buvid3=3567B490-71E6-46D5-AE40-2AF22F2AA4A0190962infoc; CURRENT_FNVAL=16; stardustvideo=1; laboratory=1-1; rpdid=|(J|klRu|)JR0J’ul~RYYm|lm; CURRENT_QUALITY=64; PVID=1; DedeUserID=454926423; DedeUserID__ckMd5=e271ed24028d53c4; SESSDATA=9fc575f0%2C1601446963%2Cc17a1*41; bili_jct=b7334ab8c8f769f30c691f7cb985e22d; bfe_id=393becc67cde8e85697ff111d724b3c8”,<br>         “Host”: “api.bilibili.com”,<br>         “Origin”: “<a href="https://www.bilibili.com&quot;" target="_blank" rel="noopener">https://www.bilibili.com&quot;</a>,<br>         “Referer”: “<a href="https://www.bilibili.com/video/av89901570?from=search&amp;seid=7620866718617405880&quot;" target="_blank" rel="noopener">https://www.bilibili.com/video/av89901570?from=search&amp;seid=7620866718617405880&quot;</a>,<br>         “User-Agent”: “Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36”<br>     }</p>
 <pre><code>form_data = {
     &quot;oid&quot;: 94775464,
     &quot;type&quot;: 1,
